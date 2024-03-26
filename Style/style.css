@@ -1,0 +1,274 @@
+:root {
+  /* Cores */
+  --branco: #ffffff;
+  --preto: #000000;
+  --creme: #c4a47c;
+  --marrom-claro: #604829;
+  --cinza: #666666;
+  --cinza-claro: #acacac;
+  /* Fonte */
+  --lato: "Lato", sans-serif;
+  --oswald: "Oswald", sans-serif;
+  --fraunces: "Fraunces", serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Todos os banners */
+.container-image {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Subtitulos dos banners */
+.banner-subtitle {
+  font-size: 20px;
+  font-family: var(--fraunces);
+  font-style: italic;
+  color: var(--branco);
+  background-color: var(--marrom-claro);
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Secao: Contatos */
+.contatos-texto {
+  width: 500px;
+  padding: 10px;
+  background-color: var(--marrom-claro);
+  font-family: var(--oswald);
+  color: var(--branco);
+  text-align: center;
+}
+
+/* CABECALHO */
+.cabecalho {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--marrom-claro);
+
+  .cabecalho-logo {
+    position: relative;
+    left: 15%;
+    width: 75px;
+  }
+
+  .cabecalho-nav {
+    position: absolute;
+    right: 15%;
+    top: 40%;
+
+    .cabecalho-nav-link {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: var(--creme);
+      filter: drop-shadow(3px 3px var(--preto));
+      font-family: var(--oswald);
+      font-size: 18px;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+  }
+}
+
+/* CONTEUDO */
+/* Banner 1 */
+.banner-manhattan {
+  height: 100vh;
+  background-image: url("../assets/parallax-imagem1.png");
+
+  .banner-manhattan-title {
+    font-size: 100px;
+    font-family: var(--fraunces);
+    color: var(--branco);
+    text-transform: uppercase;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}
+
+/* Todas as sections com textos */
+/* Informacoes */
+/* Sobre Manhattan Coffe */
+/* Conheça o cafe */
+.sections {
+  text-align: center;
+  padding: 80px 0;
+
+  .sections-subtitle {
+    font-size: 20px;
+    font-family: var(--oswald);
+    color: var(--creme);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+  }
+
+  .sections-paragrafo {
+    font-family: var(--lato);
+    line-height: 36px;
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+/* Banner 2 */
+.banner-2 {
+  height: 50vh;
+  background-image: url("../assets/parallax-imagem2.jpg");
+}
+
+/* Banner 3 */
+.banner-3 {
+  height: 50vh;
+  background-image: url("../assets/parallax-imagem3.jpg");
+}
+
+/* Contatos e Endereço*/
+.section-contatos {
+  height: 100vh;
+  background-image: url("../assets/parallax-imagem4.png");
+  position: relative;
+
+  .contatos-subtitulo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .iframe {
+    width: 900px;
+    height: 320px;
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .contatos {
+    position: absolute;
+    bottom: 4%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+
+    .contatos-paragrafo {
+      filter: drop-shadow(3px 3px 3px var(--preto));
+      margin: 16px 0;
+    }
+  }
+}
+
+/* Horario Funcionamento */
+.horarios {
+  height: 85vh;
+  background-image: url("../assets/cafeteria.jpg");
+  font-family: var(--oswald);
+  position: relative;
+
+  .horarios-subtitle {
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    position: relative;
+    top: 20%;
+    text-align: center;
+  }
+
+  .horarios-lista {
+    max-width: 768px;
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: var(--branco);
+    list-style: none;
+
+    .horarios-lista-item {
+      position: relative;
+
+      .horarios-lista-item-dia {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .horarios-lista-item-div {
+        width: 70%;
+        height: 1px;
+        background-color: var(--branco);
+        position: absolute;
+        top: 60%;
+        right: 30px;
+        left: 0;
+        margin: 0 auto;
+      }
+
+      .texto-marrom {
+        color: var(--creme);
+        font-weight: 700;
+      }
+
+      .horarios-lista-item-paragrafo {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+}
+
+/* RODAPE */
+.rodape {
+  position: relative;
+  background-color: var(--preto);
+  font-family: var(--lato);
+  text-align: center;
+  color: var(--branco);
+  padding: 20px 0;
+  line-height: 34px;
+  letter-spacing: 2px;
+
+  .rodape-subtitle {
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+
+  .rodape-paragrafo {
+    .rodape-span {
+      color: var(--creme);
+    }
+  }
+
+  .rodape-imagem {
+    background-image: url("../assets/seta-para-cima.png");
+    background-position: center;
+    background-size: cover;
+    background-color: var(--creme);
+    border-radius: 4px;
+    position: absolute;
+    right: 150px;
+    bottom: 95px;
+    width: 60px;
+    height: 60px;
+  }
+}
